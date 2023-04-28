@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">Lab4 SSG</string>
+
+    <!-- Strings para los numeros de telefono -->
+    <string name="telefono_uno">4951075008</string>
+    <string name="telefono_dos">4631220148</string>
+    <string name="telefono_tres">4631035276</string>
+    
+    <!-- Stings para los botones -->
+    <string name="boton_llamar">Llamar</string>
+    <string name="boton_ordenar">+</string>
+    <string name="direcciones_view_label">Suc. 1: Zaragoza #213 Zona Centro, Calvillo Ags. \nSuc. 2:Blvd. Rodolfo Landeros #150, Calvillo, Ags. \nSuc. 3: Av. Aguascalientes Sur #436 Local 9-A, Col. España, Ags.</string>
+
+    <!-- Strings para Toast -->
+    <string name="selecciona_numero">Selecciona un numero para marcar!</string>
+    <string name="selecciona_platillo">Selecciona el platillo</string>
+    <string name="selecciona_tamaño">Selecciona tamaño del platillo</string>
+
+    <!-- Strings para checkbox -->
+    <string name="pozole_rojo_o_verde">Pozole rojo o verde</string>
+    <string name="pozole_rojo">Pozole Rojo</string>
+    <string name="pozole_verde">Pozole Verde</string>
+    <string name="tamano_pocion">Tamaño de la porción</string>
+    <string name="tamano_chico">Chico</string>
+    <string name="tamano_mediano">Mediano</string>
+    <string name="tamano_grande">Grande</string>
+    <string name="label_ingredientes">Ingredientes</string>
+    <string name="label_ingrediente_repollo">Repollo</string>
+    <string name="label_ingrediente_crema">Crema</string>
+    <string name="label_ingrediente_rabanos">Rabanos</string>
+    <string name="label_ingrediente_limones">Limones</string>
+    <string name="label_ingrediente_salsa_borracha">Salsa borracha</string>
+    <string name="label_ingrediente_tostadas">Tostadas</string>
+    <string name="label_ingrediente_ordenar">Ordenar</string>
+</resources>

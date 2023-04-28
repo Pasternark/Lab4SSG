@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Menu">
+
+    <ImageView
+        android:id="@+id/image_pozole"
+        android:layout_width="match_parent"
+        android:layout_height="220dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/pozole"
+        android:layout_marginBottom="25dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="ContentDescription" />
+
+    <TextView
+        android:id="@+id/seleccionar_pozole"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:text="@string/pozole_rojo_o_verde"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/image_pozole" />
+
+    <CheckBox
+        android:id="@+id/checkBox_pozole_rojo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/pozole_rojo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/seleccionar_pozole" />
+
+    <CheckBox
+        android:id="@+id/checkBox_pozole_verde"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:text="@string/pozole_verde"
+        app:layout_constraintBottom_toBottomOf="@+id/checkBox_pozole_rojo"
+        app:layout_constraintStart_toEndOf="@+id/checkBox_pozole_rojo" />
+
+    <TextView
+        android:id="@+id/tamano_porcion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="@string/tamano_pocion"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/checkBox_pozole_rojo" />
+
+    <CheckBox
+        android:id="@+id/checkBox_tamano_chico"
+        android:layout_width="89dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/tamano_chico"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tamano_porcion" />
+
+    <CheckBox
+        android:id="@+id/checkBox_tamano_mediano"
+        android:layout_width="91dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="5dp"
+        android:text="@string/tamano_mediano"
+        app:layout_constraintBottom_toBottomOf="@+id/checkBox_tamano_chico"
+        app:layout_constraintStart_toEndOf="@+id/checkBox_tamano_chico" />
+
+    <CheckBox
+        android:id="@+id/checkBox_tamano_grande"
+        android:layout_width="98dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="5dp"
+        android:text="@string/tamano_grande"
+        app:layout_constraintBottom_toBottomOf="@+id/checkBox_tamano_mediano"
+        app:layout_constraintStart_toEndOf="@+id/checkBox_tamano_mediano" />
+
+    <TextView
+        android:id="@+id/label_ingredientes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="15dp"
+        android:text="@string/label_ingredientes"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/checkBox_tamano_chico" />
+
+    <CheckBox
+        android:id="@+id/checkBox_ing_repollo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/label_ingrediente_repollo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/label_ingredientes" />
+
+    <CheckBox
+        android:id="@+id/checkBox_ing_crema"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:text="@string/label_ingrediente_crema"
+        app:layout_constraintBottom_toBottomOf="@+id/checkBox_ing_repollo"
+        app:layout_constraintStart_toEndOf="@+id/checkBox_ing_repollo" />
+
+    <CheckBox
+        android:id="@+id/checkBox_ing_rabanos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:text="@string/label_ingrediente_rabanos"
+        app:layout_constraintBottom_toBottomOf="@+id/checkBox_ing_crema"
+        app:layout_constraintStart_toEndOf="@+id/checkBox_ing_crema" />
+
+    <CheckBox
+        android:id="@+id/checkBox_ing_limones"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="5dp"
+        android:text="@string/label_ingrediente_limones"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/checkBox_ing_repollo" />
+
+    <CheckBox
+        android:id="@+id/checkBox_ing_salsa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:text="@string/label_ingrediente_salsa_borracha"
+        app:layout_constraintBottom_toBottomOf="@+id/checkBox_ing_limones"
+        app:layout_constraintStart_toEndOf="@+id/checkBox_ing_limones" />
+
+
+    <CheckBox
+        android:id="@+id/checkBox_ing_tostadas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:text="@string/label_ingrediente_tostadas"
+        app:layout_constraintBottom_toBottomOf="@+id/checkBox_ing_salsa"
+        app:layout_constraintStart_toEndOf="@+id/checkBox_ing_salsa" />
+
+    <Button
+        android:id="@+id/boton_ordenar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:text="@string/label_ingrediente_ordenar"
+        app:icon="@android:drawable/ic_menu_send"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
